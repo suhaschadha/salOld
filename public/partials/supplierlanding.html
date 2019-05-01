@@ -1,0 +1,78 @@
+<div class="col-xs-11 setposition" ng-controller="supplierlandingController" >
+        
+        <div class="tab-content">
+                <div class="tab-pane fade in active">
+                      
+<!-- Maps and charts -->
+    <div class="margin-15">
+            <div class="col-xs-7 padding-clear">
+                    <div class="heading-text">
+                        <h3>Live Shipment temperature Status</h3>
+                    </div>
+                    <div class="geo-graph-pattern" id="">
+                        <div style="overflow: hidden;">
+                            <div class="pull-left origin-country">
+                                <select ng-model="selectedOriginCountry" ng-options="x for x in origincountry"  ng-change="selectedoriginCountry(selectedOriginCountry)"><option value="" disabled selected>Origin Country</option>
+                                </select>
+                            </div>
+                            <div class="pull-left origin-plant">
+                                <select ng-model="selectedOriginPlant" ng-options="x for x in originplant" ng-change="selectedoriginPlant()" ><option value="" disabled selected>Origin Plant</option>
+                                </select>
+                            </div>
+                            <div class="pull-left destination-country">
+                                <select ng-model="selectedDestinationCountry" ng-options="x for x in destinationcountry" ng-change="selecteddestinationCountry()"><option value="" disabled selected>Destination Country</option>
+                                </select>
+                            </div>
+                            <div class="pull-left destination-plant">
+                                <select ng-model="selectedDestinationPlant" ng-options="x for x in destinationplant" ng-change="selecteddestinationPlant()"><option value="" disabled selected>Destination Plant</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="map" style="height:270px;margin-left:3px;"> </div> </div>
+                    </div>
+                </div>
+                <div class="col-xs-5 padding-clear alert-parent">
+                    <div class="heading-text">
+                        <h3>Alerts</h3>
+                    </div>
+                    <div class="alerts-section" id="">
+                        <ul>
+                            <li style="margin-left:5px;"><img style="float:left;margin-right:10px;" src="../image/alert.png" /> <p style="overflow:auto;">Tsunami danger on the coast. Go to higher ground or move inland.Listen to local news. </p></li>
+                            <li style="margin-left:5px;"><img style="float:left;margin-right:10px;" src="../image/alert.png" /> <p style="overflow:auto;padding-top:10px;">Dust Storm Warning till 12:30 am. Pull aside, wait it out. </p></li></br>
+                            <li style="margin-left:5px;"><img style="float:left;margin-right:10px;" src="../image/alert.png" /> <p style="overflow:auto;">Flash flood warning till 4 pm. Avoid flooded areas. Check local media. </p></li>
+                            <li style="margin-left:5px;"><img style="float:left;margin-right:10px;" src="../image/alert.png" /> <p style="overflow:auto;">Life threatening storm surge danger. Check for possible evacuation orders. </p></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="margin-15">
+                    <div class="col-xs-6 padding-clear temperature-limit-section-parent">
+                        <div class="heading-text">
+                            <h3>Temperature Limit Breaches (No.)</h3>
+                        </div>
+                        <div class="temperature-limit-section" id="">
+                                <img src="image/Alert2.png" alt="Info Icon" class="info3" title="Temperature Breaches is the number of shipments in which
+                                temperature breach has happened in a particular month.">
+                                        <center><div id="chartContainer" style="height: 300px; width: 100%;"></div></center>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 padding-clear on-time-delivery-section-parent">
+                        <div class="heading-text">
+                            <h3>On time delivery (%)</h3>
+                        </div>
+                        <div class="on-time-delivery-section" id="">
+                                <img src="image/Alert2.png" alt="Info Icon" class="info1" title="On time delivery is the ratio of finish goods or shipments delivered on time to customers as a percentage of total units delivered or shipped.">
+                                <center><div id="chartContainer1" style="height: 300px; width: 100%;"></div> 
+                                <center>
+                        </div>
+                    </div>
+                </div>
+        
+
+</div>
+<!-- end of maps and charts -->
+
+    
+    
+    
+</div></div></div>

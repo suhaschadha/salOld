@@ -1,0 +1,29 @@
+
+<div ng-controller="SigninController">  
+        <div class="login-bg">
+    <div class="form-container row flip">
+            <div class="br-logo-container">
+                </div>
+        <form name="loginform" class="form-parent" novalidate>
+   
+   
+    <div class="label-cont" >
+      <input type="email" id="username"  class="username-img" tooltip-class="username-tooltip" placeholder="E-Mail ID" 
+      ng-model="emailid" name="emailid" required  ng-class="{forminputred: loginform.emailid.$invalid}"></input>
+      
+    </div>
+   
+    <div class="label-cont" >
+      <input type="password" id="password" class="password-img" tooltip-class="password-tooltip" placeholder="Password"  
+      ng-model="password" name="password" required ng-class="{forminputred: loginform.password.$invalid}"></input>
+    </div>
+   
+    
+      <button class="submit-btn" ng-click="LoginClick(loginform)">LOGIN</button>
+      
+ 
+  </form>
+  
+</div>
+</div>
+</div>

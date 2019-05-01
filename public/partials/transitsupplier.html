@@ -1,0 +1,98 @@
+<div class="col-xs-11 setposition" ng-controller="supplierController"  >
+        
+        <div class="tab-content">
+                <div class="tab-pane fade in active"> 
+    <div style="overflow: hidden;">
+        <div class="col-xs-4 pull-left">
+            <div class="padding-clear">
+            <div class="heading-text">
+                <h3>Shipment number</h3>
+            </div>
+            <div class="trace-shipment-section" id="">
+                456734
+            </div>
+        </div>
+    
+        </div>
+        <div class="col-xs-4 pull-left">
+            <div class="padding-clear">
+            <div class="heading-text">
+                <h3>Supplier Name</h3>
+            </div>
+            <div class="trace-shipment-section" id="">
+                ABC Chemicals
+            </div>
+        </div>
+        </div>
+        <div class="col-xs-4 pull-left">
+            <div class=" padding-clear">
+            <div class="heading-text">
+                <h3>Material Name</h3>
+            </div>
+            <div class="trace-shipment-section" id="">
+                PMDI
+            </div>
+        </div>
+        </div>
+</div>
+        
+         
+     
+        <div style="width:97.3%;margin-left:15px; margin-top:10px;height:300px" class="bgimg">
+
+            <div style="width:90%;margin-left:73px;" class="bgimg">
+             <img src="/image/MANUFACTURER.png" alt="Oops" class="scimginrow"/> 
+             <img src="/image/SHIPMENT3.png" alt="Oops" class="scimginrow truck"/>       
+             <img src="/image/LOADING PORT.png" alt="Oops" class="scimginrow"/>              
+             <img src="/image/SHIPMENT2.png" alt="Oops" class="scimginrow" />               
+             <img src="/image/LOADING PORT.png" alt="Oops" class="scimginrow"/>
+             <img src="/image/SHIPMENT3.png" alt="Oops" class="scimginrow truck"/>
+             <img src="/image/CUSTOMER.png" alt="Oops" class="scimginrow"/>
+            </div>
+
+            <div style="width:90%;margin-left:80px;" class="bgimg">
+                <img src="/image/Dot_green.png" alt="Oops" class="dots" id='tranaction1' /> <hr  class="whiteline">
+                <img src="/image/Dot_green.png" alt="Oops"  class="dots" id='tranaction2'/> <hr  class="whiteline">
+                <img src="/image/Dot_green.png" alt="Oops"  class="dots" id='tranaction3'/> <hr  class="whiteline">
+                <img src="/image/Dot_green.png" alt="Oops"  class="dots" id='tranaction4'/> <hr  class="whiteline">
+                <img src="/image/Dot3.png" alt="Oops"  class="dots" id='tranaction5'/> <hr  class="whiteline">
+                <img src="/image/Dot3.png" alt="Oops"  class="dots" id='tranaction6'/> <hr  class="whiteline">
+                <img src="/image/Dot3.png" alt="Oops"  class="dots" id='tranaction7'/> 
+            </div>
+
+            <div style="width:90%;margin-left:50px;" class="bgimg">
+
+                         <lable class="sclabel">MANUFACTURER</lable>
+                         <lable  class="sclabel">SHIPMENT</lable>
+                         <lable  class="sclabel">LOADING PORT</lable>
+                         <lable  class="sclabel">SHIPMENT</lable>
+                         <lable  class="sclabel">UNLOADING PORT</lable>
+                         <lable  class="sclabel">SHIPMENT</lable>
+                         <lable  class="sclabel">CUSTOMER</lable>
+                         
+                   
+                     </div>
+                     
+                     <lable class="col-lg-3" style="margin-top:50px;margin-left:50px;margin-bottom:10px;color:#FFFFFF">NEWS FEED</lable>
+                     <div style="width:90%;margin-left:50px">
+                             <table class="table table-bordered table-responsive" style="width:100%;height:150px;padding-top:10px">
+                                 <tr style="height:0px;">
+                                          <th class="col-lg-2 clinicalclass" style="background-color:#288B91;text-align:center">Lat-Long</th>
+                                          <th class="col-lg-2 clinicalclass" style="padding-left:5px;text-align:center;background-color:#288B91">Name of country</th>
+                                          <th class="col-lg-2 clinicalclass" style="text-align:center;background-color:#288B91">Name of city</th>
+                                          <th class="col-lg-2 clinicalclass" style="text-align:center;background-color:#288B91">Type Of Disruption</th>
+                                          <th class="col-lg-2 clinicalclass" style="text-align:center;background-color:#288B91">Next Day weather Prediction</th>
+                                          
+                                  </tr>
+                                      <tr ng-repeat="Shipment in shipmentlist">
+                                          <td class="col-lg-2" style="background-color:#FFFFFF;color:black">{{Shipment.Lat}},{{Shipment.Long}}</td>
+                                          <td class="col-lg-2" style="background-color:#FFFFFF;color:black">{{Shipment.Country}}</td>
+                                          <td class="col-lg-2" style="background-color:#FFFFFF;color:black">{{Shipment.City}}</td>
+                                          <td class="col-lg-2" style="background-color:#FFFFFF;color:black">{{Shipment.Disruption}}</td>
+                                          <td class="col-lg-2" style="background-color:#FFFFFF;color:black">{{Shipment.Forcast}}</td>
+                                      </tr>
+                                    </table>
+                          </div>
+                 </div>
+             </div> </div>
+            </div>
